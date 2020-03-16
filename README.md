@@ -86,5 +86,5 @@ This program sends random integer data to our kafka bridge http endpoint http://
 If you go to the logs of the eventing pod which was recently generated, you can see the data coming in as you are sending it. 
 ![Logs](https://github.com/adi6496/kafka-analytics/blob/master/images/logs.png)
 
-if you go to the terminal, and type *cd app* and then *cat results.txt* you can see the results of Linear Regression with the timestamp. 
+if you go to the terminal, you can see the results of Linear Regression with timestamp.
 ![Output on terminal](https://github.com/adi6496/kafka-analytics/blob/master/images/results.png)
