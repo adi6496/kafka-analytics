@@ -84,5 +84,7 @@ python sender.py
 This program sends random integer data to our kafka bridge http endpoint http://my-bridge.io/topics/my-topic every second. This auto generates a new topic *my-topic*. This will trigger a deployment of the eventing pod (which you can see on the openshift console). 
 
 If you go to the logs of the eventing pod which was recently generated, you can see the data coming in as you are sending it. 
+![Logs](https://github.com/adi6496/kafka-analytics/blob/master/images/logs.png)
 
-
+if you go to the terminal, and type *cd app* and then *cat results.txt* you can see the results of Linear Regression with the timestamp. 
+![Output on terminal](https://github.com/adi6496/kafka-analytics/blob/master/images/results.png)
