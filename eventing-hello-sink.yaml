@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: eventinghello
+spec:
+  template:
+    metadata:
+      name: eventinghello-v1
+      annotations:
+        autoscaling.knative.dev/target: "1"
+    spec:
+      containers:
+      - image: docker.io/adi6496/event-display-file:latest
+      timeoutSeconds: 100
